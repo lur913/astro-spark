@@ -33,13 +33,13 @@ pnpm install
 ### 启动开发服务器
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### 生产环境构建
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### 许可证
