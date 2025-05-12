@@ -1,5 +1,6 @@
 ---
 import '@/styles/global.css'
+import SayHello from '@/components/vue/SayHello.vue'
 ---
 
 <html lang="en">
@@ -12,5 +13,6 @@ import '@/styles/global.css'
 	</head>
 	<body>
 		<h1 class="text-3xl font-bold underline text-green-600">Astro</h1>
+		<SayHello client:load/>
 	</body>
 </html>
