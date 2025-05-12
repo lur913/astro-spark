@@ -1,18 +1,36 @@
 ---
-import '@/styles/global.css'
-import SayHello from '@/components/vue/SayHello.vue'
+import "@/styles/global.css";
+import SayHello from "@/components/vue/SayHello.vue";
+import { Button } from "@/components/ui/button";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1 class="text-3xl font-bold underline text-green-600">Astro</h1>
-		<SayHello client:load/>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline text-green-600">Astro</h1>
+    <SayHello client:load />
+    <hr />
+    <div class="flex gap-2 py-3">
+      <Button>Primary</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="destructive"> Destructive </Button>
+      <Button variant="outline">Outline</Button>
+      <Button variant="ghost">Ghost</Button>
+      <Button variant="link">Link</Button>
+    </div>
+    <div class="flex gap-2 py-3">
+      <Button size="sm">Primary</Button>
+      <Button variant="secondary" size="sm">Secondary</Button>
+      <Button variant="destructive" size="sm"> Destructive </Button>
+      <Button variant="outline" size="sm">Outline</Button>
+      <Button variant="ghost" size="sm">Ghost</Button>
+      <Button variant="link" size="sm">Link</Button>
+    </div>
+  </body>
 </html>
